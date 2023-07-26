@@ -1,3 +1,5 @@
+import sys
+
 words = ['abstemious', 'luxury', 'onomotopiea', 'existence', 'death', 'Islam', 'president']
 
 def vowel(words):
@@ -11,5 +13,9 @@ def vowel(words):
                 v_li.append(word[w])
         print(f"There are {v_ct} vowels in {word}.")
         print(f"{word} = {list(set(v_li))}")
-    
-vowel(words)
+
+def main():
+    return vowel(words)
+
+if __name__ == "__main__":
+    main()
